@@ -1,0 +1,77 @@
+::selection {background: transparent;}
+p{margin: 0; font: 17px/150% Arial; text-align: center; color: #888;}
+p a{color: #888;}
+body{ color:#c7fcec; }
+#p2{margin: 0; font:bold 20px/150% Arial; text-align: center;margin-top: 20px; color: #ff5c5c;}
+
+#controls{text-align: center;}
+#controls2{text-align: center;}
+#controls3{text-align: center;}
+#timer{text-align: center;}
+#timer23{text-align: center;}
+#controls button{
+	cursor: pointer;
+	outline: none;	
+	padding: 10px 20px;
+	margin: 25px 2px;
+	border: 0;
+	border-radius: 4px;
+	background: #001F1F;
+	font: bold 14px Arial;
+	text-align: center;
+	text-transform: uppercase;
+	text-shadow: -1px -1px 0 rgba(0,0,0, 0.5);
+	color: #fff;
+}
+#controls button:hover{background: #003333;}
+
+#puzzle{
+	position: relative;
+	width: 325px;
+	height: 325px;
+	margin: 0 auto;
+	margin-top: 20px;
+	border: 6px solid #DC143C;
+	border-radius: 4px;
+}
+#puzzle span{
+ background:url("heart2.png");
+              background-size:100% 100%;
+              background-repeat: no-repeat ;
+	position: absolute;
+	display: block;
+	width: 80px;
+	height: 80px;
+	border-radius: 4px;
+}
+
+#puzzle span.number{
+              background:url("heart2.png");
+              background-size:100% 100%;
+              background-repeat: no-repeat ;
+	cursor: pointer;
+	font: bold 36px/80px Arial;
+	text-align: center;
+	text-shadow: -1px -1px 0 rgba(0,0,0, 0.5);
+	color: #00a1e0;
+}
+#elka{
+	position: relative;
+background:url("elka.png");
+              background-size:100% 100%;
+              background-repeat: no-repeat ;
+           margin: 0 auto;
+           margin-top: 5px;
+	display: block;
+	width: 180px;
+	height: 120px;
+
+}
+#puzzle span.empty{background: transparent;}
+#puzzle span.number.light{background:url("3.png"); background-size:100% 100%;background-repeat: no-repeat ;color: #00FFFF;}
+#puzzle span.number.dark{ background:url("heart2.png"); background-size:100% 100%;background-repeat: no-repeat ;color: #00FFFF;}
+
+#puzzle.animate span{
+	-webkit-transition: 0.15s left, 0.15s top;
+ 	transition: 0.15s left, 0.15s top;
+}
